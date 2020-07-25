@@ -1,3 +1,4 @@
+require 'pry'
 class School
 
   def initialize(name)
@@ -9,6 +10,7 @@ class School
   end
 
   def add_student(student_name,grade)
+    binding.pry
       self.roster.none?(grade) : self.roster[grade] = []
 
     self.roster[grade] << student_name
