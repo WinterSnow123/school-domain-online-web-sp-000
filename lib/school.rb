@@ -1,4 +1,3 @@
-require pry
 class School
 
   def initialize(name)
@@ -19,7 +18,3 @@ class School
 
   end
 end
-
-bayside = School.new("bayside")
-bayside.add_student("Kelly",9)
-binding.pry
