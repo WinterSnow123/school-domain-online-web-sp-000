@@ -13,7 +13,7 @@ class School
       self.roster[grade] = []
     end
 
-    self.roster[grade] << student
+    self.roster[grade] << student_name
 
 
   end
