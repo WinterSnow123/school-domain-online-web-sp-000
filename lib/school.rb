@@ -2,6 +2,7 @@ class School
 
   def initialize(name)
     @name = name
+    puts self
   end
 
   def roster
@@ -14,7 +15,5 @@ class School
         end
 
     self.roster[grade] << student_name
-
-
   end
 end
