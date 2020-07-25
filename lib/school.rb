@@ -9,9 +9,7 @@ class School
   end
 
   def add_student(student_name,grade)
-      self.roster.none?(grade)
-      self.roster[grade] = []
-    end
+      self.roster.none?(grade) : self.roster[grade] = []
 
     self.roster[grade] << student_name
 
