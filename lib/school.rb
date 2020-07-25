@@ -10,7 +10,7 @@ class School
   end
 
   def add_student(student_name,grade)
-      if self.roster.none?(|current_grade| current_grade == grade)
+      if self.roster.none?{|current_grade| current_grade == grade}
           self.roster[grade] = []
         end
 
