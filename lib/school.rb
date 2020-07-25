@@ -18,3 +18,6 @@ class School
 
   end
 end
+
+bayside = School.new("bayside")
+bayside.add_student("Kelly",9)
