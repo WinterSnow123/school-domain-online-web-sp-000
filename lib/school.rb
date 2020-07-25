@@ -10,10 +10,6 @@ class School
   end
 
   def add_student(student_name,grade)
-      if roster.none?{|current_grade| current_grade == grade}
-          roster[grade] = []
-        end
-
-    roster[grade] << student_name
+    self.roster.include?(grade)
   end
 end
