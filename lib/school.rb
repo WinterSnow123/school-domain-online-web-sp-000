@@ -10,7 +10,6 @@ class School
   end
 
   def add_student(student_name,grade)
-    binding.pry
       self.roster.none?(grade) : self.roster[grade] = []
 
     self.roster[grade] << student_name
@@ -21,3 +20,4 @@ end
 
 bayside = School.new("bayside")
 bayside.add_student("Kelly",9)
+binding.pry
